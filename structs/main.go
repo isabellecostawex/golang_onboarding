@@ -16,21 +16,15 @@ type person struct {
 func main() {
 	//alex := person{firstName: "Alex", lastName: "Anderson"}
 	jim := person{
-	firstName: "Jim", 
-	lastName: "Party",
-	contact: contactInfo{
-		email: "jim@gmail.com",
-		zipCode: 954400,
-	},
-}
-	//JimPointer := &jim
-	//JimPointer.updateName("Jimmy")
-	jim.updateName("Jimmy")
-	jim.print()
-}
+		firstName: "Jim",
+		lastName:  "Party",
+		contact: contactInfo{
+			email:   "jim@gmail.com",
+			zipCode: 954400,
+		},
+	}
 
-func (pointerToPerson *person) updateName(newFirstName string) {
-	(*pointerToPerson).firstName = newFirstName
+	jim.print()
 }
 
 func (p person) print() {

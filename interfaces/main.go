@@ -16,6 +16,7 @@ func main() {
 	printGreeting(eb)
 	printGreeting(sb)
 }
+
 func printGreeting(b bot) {
 	fmt.Println(b.getGreeting())
 }

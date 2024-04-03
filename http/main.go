@@ -16,5 +16,4 @@ func main() {
 	byteslice := make([]byte, 999999)
 	resp.Body.Read(byteslice)
 	fmt.Println(string(byteslice))
-
 }

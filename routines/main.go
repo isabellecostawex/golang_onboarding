@@ -15,6 +15,6 @@ func counter(tipo string) {
 func main() {
 	go counter("a")
 	go counter("b")
+	go counter("c")
 	time.Sleep(time.Second * 10)
-
 }

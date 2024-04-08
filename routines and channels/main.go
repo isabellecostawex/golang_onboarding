@@ -24,4 +24,5 @@ func main() {
 	for i := 0; i < 10; i++ {
 		msg <- i
 	}
+	time.Sleep(5*time.Second)
 }
